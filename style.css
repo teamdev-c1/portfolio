@@ -1,22 +1,21 @@
-body{
-    height: 100vh; /* 画面全体の高さ100% */
-    display: flex;
-    flex-direction: column;  /* 縦並び */
-    justify-content: center; /* 縦方向の中央 */
-    align-items: center;     /* 横方向の中央 */
-    gap:20px;
+body {
+  height: 100vh; /* 画面全体の高さ100% */
+  display: flex;
+  flex-direction: column; /* 縦並び */
+  justify-content: center; /* 縦方向の中央 */
+  align-items: center; /* 横方向の中央 */
+  gap: 20px;
 }
 /*btn 機能作成*/
-#btn-click{
-    
-    color:white;
-    background-color:#dc3543;
-    border:none;
-    border-radius: 20px;
-    font-size:16px;
-    padding:8px 14px;
+#btn-click {
+  color: white;
+  background-color: #dc3543;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 8px 14px;
 }
-#btn-click:hover{
-    background-color:#b32430;
-    cursor:pointer;
+#btn-click:hover {
+  background-color: #b32430;
+  cursor: pointer;
 }
