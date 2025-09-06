@@ -104,21 +104,22 @@ body {
 }
 
 .double-border {
-  border: 4px solid #dc3545;
-  /* 外側：太い赤線 */
-  padding: 12px;
+  border: 6px solid #dc3545;
+  /* 外側：さらに太い赤線 */
+  padding: 68px;
+  /* 内側余白をさらに大きく */
   position: relative;
 }
 
 .double-border::before {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 6px;
-  right: 6px;
-  bottom: 6px;
-  border: 1.5px solid #dc3545;
-  /* 内側：細い赤線 */
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 3px solid #dc3545;
+  /* 内側：少し太めにして強調 */
   pointer-events: none;
   border-radius: inherit;
   /* 親の丸みを継承 */
