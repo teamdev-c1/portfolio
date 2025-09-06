@@ -110,6 +110,7 @@ body {
   padding: 68px;
   /* 内側余白をさらに大きく */
   position: relative;
+  background: #fff;
 }
 
 .double-border::before {
