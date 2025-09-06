@@ -10,6 +10,7 @@ body {
   justify-content: center; /* 縦方向の中央 */
   align-items: center; /* 横方向の中央 */
   gap: 20px;
+  background: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
   font-family: var(--bs-font-sans-serif);
   margin: 0;
   font-size: 1rem;
