@@ -21,7 +21,31 @@
         <a href="developers.html">開発者一覧</a>
     </div>
     <p id="bottom">@ソフトウェア開発みくじ</p>
-    <script src="main.js"></script>
+    
+    <div id="js-modal" class="css-modal">
+        <div class="window">
+            <button class="js-close-btn">&times;</button>
+            <div class="card">
+                <h3 class="modal-title">ソフトウェア開発みくじ</h2>
+                <hr class="bar">
+                <img class="js-img" alt="">
+                <hr class="bar">
+                <p class="js-text"></p>
+                <!-- くじの説明文（≠ラッキー言語） -->
+                <p class="js-result-desc"></p>
+                <hr class="bar">
+                <p class="modal-title">＊ラッキー言語＊</p>
+                <p class="js-lucky-lang css-lucky-value"></p>
+                <hr class="bar">
+                <p class="modal-title">＊ラッキーデータベース＊</p>
+                <p class="js-lucky-db css-lucky-value"></p>
+                <hr class="bar">
+                <p class="modal-title">＊ラッキーエディタ＊</p>
+                <p class="js-lucky-editor css-lucky-value"></p>
+                <button id="retry-btn">もう一度おみくじを引く</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
