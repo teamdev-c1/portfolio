@@ -1,15 +1,20 @@
-:root 
-{
-  --bs-red: #dc3545;/*rgba(220, 53, 69, 1)*/
+:root {
+  --bs-red: #dc3545;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 body {
-  height: 100vh; /* 画面全体の高さ100% */
+  height: 100vh;
+  /* 画面全体の高さ100% */
   display: flex;
-  flex-direction: column; /* 縦並び */
-  justify-content: center; /* 縦方向の中央 */
-  align-items: center; /* 横方向の中央 */
+  flex-direction: column;
+  /* 縦並び */
+  justify-content: center;
+  /* 縦方向の中央 */
+  align-items: center;
+  /* 横方向の中央 */
   gap: 20px;
+  background: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
   font-family: var(--bs-font-sans-serif);
   margin: 0;
   font-size: 1rem;
@@ -18,6 +23,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
+
 /*btn 機能作成*/
 #btn-click {
   color: white;
@@ -26,10 +32,11 @@ body {
   border-radius: 20px;
   font-size: 16px;
   padding: 8px 14px;
-  margin-top:1rem;
-  margin-bottom:2rem;
-  font-family:"HGS行書体", "HG行書体", cursive;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-family: "HGS行書体", "HG行書体", cursive;
 }
+
 #btn-click:hover {
   background-color: darkred;
   cursor: pointer;
@@ -39,29 +46,33 @@ body {
 }
 /*text color 変更*/
 .title h1 {
-  font-family:"HGS行書体", "HG行書体", cursive;
-  font-size:2.4rem;
+  font-family: "HGS行書体", "HG行書体", cursive;
+  font-size: 2.4rem;
   color: var(--bs-red);
   text-align: center;
   margin: 0;
 }
+
 #bottom {
   color: var(--bs-red);
-  font-size:0.5rem;
-  margin-top:0; 
+  font-size: 0.5rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
+
 .side-by-side {
   color: var(--bs-red);
-  font-size:0.75rem;
-  font-family:"HGS行書体", "HG行書体", cursive;
-  margin-top:0;
+  font-size: 0.75rem;
+  font-family: "HGS行書体", "HG行書体", cursive;
+  margin-top: 0;
   margin-bottom: 0;
 }
+
 .side-by-side a {
   color: var(--bs-red);
   text-decoration: none;
 }
+
 #img {
   width: 190px;
   height: auto;
@@ -72,15 +83,19 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(10deg);
   }
+
   50% {
     transform: rotate(-10deg);
   }
+
   75% {
     transform: rotate(10deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -172,4 +187,27 @@ body {
 }
 #retry-btn:active {
   box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.4);
+}
+
+.double-border {
+  border: 6px solid #dc3545;
+  /* 外側：さらに太い赤線 */
+  padding: 68px;
+  /* 内側余白をさらに大きく */
+  position: relative;
+  background: #fff;
+}
+
+.double-border::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 3px solid #dc3545;
+  /* 内側：少し太めにして強調 */
+  pointer-events: none;
+  border-radius: inherit;
+  /* 親の丸みを継承 */
 }
